@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLMine_SetController">
+            <connections>
+                <outlet property="quitBtn" destination="WcY-7W-vZn" id="Let-qh-Cd1"/>
+                <outlet property="tableView" destination="Nt8-ce-1Lb" id="PAB-Yl-4Ab"/>
+                <outlet property="tableViewHeight" destination="Jq9-SN-wd7" id="4xJ-mR-QfH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="487"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nt8-ce-1Lb">
+                    <rect key="frame" x="0.0" y="64" width="370" height="300"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Jq9-SN-wd7"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="acw-ut-aa6"/>
+                        <outlet property="delegate" destination="-1" id="3gd-iz-jaV"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcY-7W-vZn">
+                    <rect key="frame" x="20" y="394" width="330" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="mkY-To-D56"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="退出登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="quitLogin:" destination="-1" eventType="touchUpInside" id="O6F-t5-JjA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Nt8-ce-1Lb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Rd-q8-iC4"/>
+                <constraint firstAttribute="trailing" secondItem="WcY-7W-vZn" secondAttribute="trailing" constant="20" id="EZt-w9-DnC"/>
+                <constraint firstItem="WcY-7W-vZn" firstAttribute="top" secondItem="Nt8-ce-1Lb" secondAttribute="bottom" constant="30" id="K00-Ob-PuV"/>
+                <constraint firstItem="WcY-7W-vZn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="SpG-24-3lV"/>
+                <constraint firstItem="Nt8-ce-1Lb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="nr7-f1-Mo2"/>
+                <constraint firstAttribute="trailing" secondItem="Nt8-ce-1Lb" secondAttribute="trailing" id="qUy-wU-SzN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="31" y="-36.5"/>
+        </view>
+    </objects>
+</document>

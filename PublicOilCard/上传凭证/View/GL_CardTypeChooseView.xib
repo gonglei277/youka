@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="GL_CardTypeChooseView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Rz-5R-36V">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中石油" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUc-93-XIf">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                            <gestureRecognizers/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hUc-93-XIf" secondAttribute="trailing" id="0ki-i3-sH7"/>
+                        <constraint firstAttribute="bottom" secondItem="hUc-93-XIf" secondAttribute="bottom" id="7N2-87-uQW"/>
+                        <constraint firstItem="hUc-93-XIf" firstAttribute="top" secondItem="6Rz-5R-36V" secondAttribute="top" id="I2E-4c-4Ha"/>
+                        <constraint firstAttribute="height" constant="50" id="VxB-e4-sxR"/>
+                        <constraint firstItem="hUc-93-XIf" firstAttribute="leading" secondItem="6Rz-5R-36V" secondAttribute="leading" id="yJz-fZ-1AI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Np8-C6-cfo">
+                    <rect key="frame" x="0.0" y="50" width="280" height="50"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中石化" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZG-lR-Jqq">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cZG-lR-Jqq" secondAttribute="bottom" id="J9M-Wr-ldL"/>
+                        <constraint firstAttribute="trailing" secondItem="cZG-lR-Jqq" secondAttribute="trailing" id="KtW-Uc-p8R"/>
+                        <constraint firstItem="cZG-lR-Jqq" firstAttribute="top" secondItem="Np8-C6-cfo" secondAttribute="top" id="OMa-gb-edO"/>
+                        <constraint firstItem="cZG-lR-Jqq" firstAttribute="leading" secondItem="Np8-C6-cfo" secondAttribute="leading" id="f6y-4A-cM7"/>
+                        <constraint firstAttribute="height" constant="50" id="xdj-Bo-HSC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Np8-C6-cfo" firstAttribute="top" secondItem="6Rz-5R-36V" secondAttribute="bottom" id="41q-Gj-AUs"/>
+                <constraint firstItem="Np8-C6-cfo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="74S-Pi-mWI"/>
+                <constraint firstItem="6Rz-5R-36V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V0V-6W-p58"/>
+                <constraint firstAttribute="trailing" secondItem="Np8-C6-cfo" secondAttribute="trailing" id="ZCz-av-nIh"/>
+                <constraint firstAttribute="trailing" secondItem="6Rz-5R-36V" secondAttribute="trailing" id="g8R-Xt-1eE"/>
+                <constraint firstItem="6Rz-5R-36V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gnu-YJ-Ekx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="huaLabel" destination="cZG-lR-Jqq" id="uZp-Um-jgq"/>
+                <outlet property="youLabel" destination="hUc-93-XIf" id="wgN-mH-b5e"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="166"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="GLMine_UploadRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0t-SI-bSy">
+                        <rect key="frame" x="10" y="24" width="120" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fhm-8a-Mgo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-26" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMl-rm-rpD">
+                        <rect key="frame" x="210" y="23.5" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="cYP-ua-Ghq"/>
+                            <constraint firstAttribute="height" constant="20" id="u27-Pl-nVi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中石油" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw4-ca-QUT">
+                        <rect key="frame" x="140" y="24" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="BYJ-fY-egH"/>
+                            <constraint firstAttribute="height" constant="20" id="HhI-B4-CP6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xw4-ca-QUT" firstAttribute="centerY" secondItem="P0t-SI-bSy" secondAttribute="centerY" id="5Wf-98-l1T"/>
+                    <constraint firstItem="Xw4-ca-QUT" firstAttribute="leading" secondItem="P0t-SI-bSy" secondAttribute="trailing" constant="10" id="5a2-Sv-53R"/>
+                    <constraint firstAttribute="trailing" secondItem="OMl-rm-rpD" secondAttribute="trailing" constant="10" id="G0R-YR-nk0"/>
+                    <constraint firstItem="OMl-rm-rpD" firstAttribute="centerY" secondItem="P0t-SI-bSy" secondAttribute="centerY" id="GCd-fz-grg"/>
+                    <constraint firstItem="Xw4-ca-QUT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="K8G-ZS-lMc"/>
+                    <constraint firstItem="P0t-SI-bSy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ysj-p6-FXP"/>
+                    <constraint firstItem="P0t-SI-bSy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hd8-ul-cN5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="OMl-rm-rpD" id="jks-bh-u7y"/>
+                <outlet property="moneyLabel" destination="P0t-SI-bSy" id="5Of-ZE-gfw"/>
+                <outlet property="typeLabel" destination="Xw4-ca-QUT" id="VvF-wb-533"/>
+            </connections>
+            <point key="canvasLocation" x="40.5" y="66"/>
+        </tableViewCell>
+    </objects>
+</document>

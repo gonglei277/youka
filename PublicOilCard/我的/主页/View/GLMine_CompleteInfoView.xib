@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="GLMine_CompleteInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="226"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdV-d7-edU">
+                    <rect key="frame" x="0.0" y="10" width="295" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全团了ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-W3-a2d">
+                            <rect key="frame" x="10" y="15" width="60.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="wge-jd-9Ri"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="yPp-9G-bPC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入全团了ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgr-XY-uHq">
+                            <rect key="frame" x="80.5" y="0.0" width="204.5" height="50"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOE-Rs-hFR">
+                            <rect key="frame" x="0.0" y="49" width="295" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Cvf-bB-F5U"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="xgr-XY-uHq" secondAttribute="bottom" id="2sm-8D-0dr"/>
+                        <constraint firstItem="xgr-XY-uHq" firstAttribute="leading" secondItem="GdL-W3-a2d" secondAttribute="trailing" constant="10" id="5jW-29-bxX"/>
+                        <constraint firstItem="xgr-XY-uHq" firstAttribute="top" secondItem="AdV-d7-edU" secondAttribute="top" id="CxE-nK-GzT"/>
+                        <constraint firstItem="GdL-W3-a2d" firstAttribute="leading" secondItem="AdV-d7-edU" secondAttribute="leading" constant="10" id="Dno-4t-Gda"/>
+                        <constraint firstAttribute="bottom" secondItem="wOE-Rs-hFR" secondAttribute="bottom" id="EwO-hQ-yme"/>
+                        <constraint firstAttribute="trailing" secondItem="wOE-Rs-hFR" secondAttribute="trailing" id="TDJ-gO-uLJ"/>
+                        <constraint firstAttribute="trailing" secondItem="xgr-XY-uHq" secondAttribute="trailing" constant="10" id="YsJ-8X-6iy"/>
+                        <constraint firstItem="xgr-XY-uHq" firstAttribute="centerY" secondItem="GdL-W3-a2d" secondAttribute="centerY" id="ZWo-Pw-kEG"/>
+                        <constraint firstItem="wOE-Rs-hFR" firstAttribute="leading" secondItem="AdV-d7-edU" secondAttribute="leading" id="qoW-zS-gKZ"/>
+                        <constraint firstAttribute="height" constant="50" id="wtv-mH-VwM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3j-kC-ytX">
+                    <rect key="frame" x="0.0" y="60" width="295" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中石油卡号:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjo-ea-e6I">
+                            <rect key="frame" x="10" y="15" width="75.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Iym-4B-x8S"/>
+                                <constraint firstAttribute="height" constant="20" id="awd-tt-yuA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入中石油卡号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VoG-gl-Iz0">
+                            <rect key="frame" x="95.5" y="0.0" width="189.5" height="50"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOG-X1-kXC">
+                            <rect key="frame" x="0.0" y="49" width="295" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="aqX-yl-ZS2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xjo-ea-e6I" firstAttribute="leading" secondItem="G3j-kC-ytX" secondAttribute="leading" constant="10" id="0QC-Fx-hyu"/>
+                        <constraint firstAttribute="bottom" secondItem="xOG-X1-kXC" secondAttribute="bottom" id="89I-i6-mZi"/>
+                        <constraint firstAttribute="trailing" secondItem="VoG-gl-Iz0" secondAttribute="trailing" constant="10" id="8E5-i5-Oft"/>
+                        <constraint firstItem="xOG-X1-kXC" firstAttribute="leading" secondItem="G3j-kC-ytX" secondAttribute="leading" id="8HS-v9-Ccf"/>
+                        <constraint firstAttribute="height" constant="50" id="NSL-xG-fK9"/>
+                        <constraint firstAttribute="trailing" secondItem="xOG-X1-kXC" secondAttribute="trailing" id="TNE-wQ-wO5"/>
+                        <constraint firstItem="VoG-gl-Iz0" firstAttribute="top" secondItem="G3j-kC-ytX" secondAttribute="top" id="UAn-XH-79x"/>
+                        <constraint firstAttribute="bottom" secondItem="VoG-gl-Iz0" secondAttribute="bottom" id="dKd-XU-ede"/>
+                        <constraint firstItem="VoG-gl-Iz0" firstAttribute="centerY" secondItem="xjo-ea-e6I" secondAttribute="centerY" id="sxf-nY-lzy"/>
+                        <constraint firstItem="VoG-gl-Iz0" firstAttribute="leading" secondItem="xjo-ea-e6I" secondAttribute="trailing" constant="10" id="uFD-eZ-Dk9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fs-Rf-GcD">
+                    <rect key="frame" x="0.0" y="160" width="295" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvG-Ea-jGq">
+                            <rect key="frame" x="0.0" y="0.0" width="148" height="59"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-Ea-LqS">
+                            <rect key="frame" x="149" y="0.0" width="146" height="59"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YCe-Ea-LqS" secondAttribute="trailing" id="2sW-zA-siC"/>
+                        <constraint firstAttribute="bottom" secondItem="dvG-Ea-jGq" secondAttribute="bottom" constant="1" id="5Bj-Lw-e65"/>
+                        <constraint firstItem="dvG-Ea-jGq" firstAttribute="leading" secondItem="3fs-Rf-GcD" secondAttribute="leading" id="5mW-dp-6dd"/>
+                        <constraint firstItem="dvG-Ea-jGq" firstAttribute="top" secondItem="3fs-Rf-GcD" secondAttribute="top" id="8lc-HA-f0Z"/>
+                        <constraint firstAttribute="height" constant="60" id="Eog-h1-JYd"/>
+                        <constraint firstItem="dvG-Ea-jGq" firstAttribute="width" secondItem="3fs-Rf-GcD" secondAttribute="width" multiplier="1/2" id="UqB-28-zaK"/>
+                        <constraint firstItem="YCe-Ea-LqS" firstAttribute="top" secondItem="3fs-Rf-GcD" secondAttribute="top" id="i1B-lx-aIa"/>
+                        <constraint firstAttribute="bottom" secondItem="YCe-Ea-LqS" secondAttribute="bottom" constant="1" id="pni-bx-1rs"/>
+                        <constraint firstItem="YCe-Ea-LqS" firstAttribute="leading" secondItem="dvG-Ea-jGq" secondAttribute="trailing" constant="1" id="vtu-w3-EdY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MkI-ao-tPv">
+                    <rect key="frame" x="0.0" y="110" width="295" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中石化卡号:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pu2-8p-lQf">
+                            <rect key="frame" x="10" y="15" width="75.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="H4P-71-r5h"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="na8-Ui-yRW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入中石化卡号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKC-cY-dGY">
+                            <rect key="frame" x="95.5" y="0.0" width="189.5" height="50"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tua-le-YRx">
+                            <rect key="frame" x="0.0" y="49" width="295" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="YFe-Iq-3fA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tua-le-YRx" secondAttribute="bottom" id="51R-LB-9D7"/>
+                        <constraint firstItem="vKC-cY-dGY" firstAttribute="centerY" secondItem="pu2-8p-lQf" secondAttribute="centerY" id="6zy-31-njC"/>
+                        <constraint firstItem="vKC-cY-dGY" firstAttribute="leading" secondItem="pu2-8p-lQf" secondAttribute="trailing" constant="10" id="7vy-Xb-DRI"/>
+                        <constraint firstAttribute="trailing" secondItem="tua-le-YRx" secondAttribute="trailing" id="8qG-ey-exz"/>
+                        <constraint firstAttribute="bottom" secondItem="vKC-cY-dGY" secondAttribute="bottom" id="AE5-Eb-S4J"/>
+                        <constraint firstItem="tua-le-YRx" firstAttribute="leading" secondItem="MkI-ao-tPv" secondAttribute="leading" id="FRy-lz-Yau"/>
+                        <constraint firstAttribute="height" constant="50" id="LXQ-lp-Cua"/>
+                        <constraint firstItem="pu2-8p-lQf" firstAttribute="leading" secondItem="MkI-ao-tPv" secondAttribute="leading" constant="10" id="SMx-Vx-myg"/>
+                        <constraint firstAttribute="trailing" secondItem="vKC-cY-dGY" secondAttribute="trailing" constant="10" id="VkQ-Vf-QHN"/>
+                        <constraint firstItem="vKC-cY-dGY" firstAttribute="top" secondItem="MkI-ao-tPv" secondAttribute="top" id="a78-ok-jpw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AdV-d7-edU" secondAttribute="trailing" id="0ob-zp-eGk"/>
+                <constraint firstItem="3fs-Rf-GcD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3eb-Y5-Xtw"/>
+                <constraint firstAttribute="trailing" secondItem="G3j-kC-ytX" secondAttribute="trailing" id="5Wa-OQ-doI"/>
+                <constraint firstItem="G3j-kC-ytX" firstAttribute="top" secondItem="AdV-d7-edU" secondAttribute="bottom" id="9Bw-0A-aM2"/>
+                <constraint firstItem="AdV-d7-edU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C6g-Vo-cOU"/>
+                <constraint firstAttribute="trailing" secondItem="3fs-Rf-GcD" secondAttribute="trailing" id="Fh0-kZ-V3k"/>
+                <constraint firstItem="G3j-kC-ytX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TWN-ec-YwB"/>
+                <constraint firstAttribute="trailing" secondItem="3fs-Rf-GcD" secondAttribute="trailing" id="V5v-uc-2Ow"/>
+                <constraint firstItem="AdV-d7-edU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Ydm-LZ-dX3"/>
+                <constraint firstAttribute="trailing" secondItem="MkI-ao-tPv" secondAttribute="trailing" id="fdj-ed-cQl"/>
+                <constraint firstItem="MkI-ao-tPv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g7Z-Nt-Psa"/>
+                <constraint firstItem="3fs-Rf-GcD" firstAttribute="top" secondItem="MkI-ao-tPv" secondAttribute="bottom" id="jHm-W4-SFS"/>
+                <constraint firstItem="3fs-Rf-GcD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s4L-Gg-A4O"/>
+                <constraint firstItem="MkI-ao-tPv" firstAttribute="top" secondItem="G3j-kC-ytX" secondAttribute="bottom" id="yRp-qR-abp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="SinopecViewHeight" destination="LXQ-lp-Cua" id="XfF-Xd-Ubq"/>
+                <outlet property="cancelBtn" destination="dvG-Ea-jGq" id="6IO-Vt-ull"/>
+                <outlet property="huaView" destination="MkI-ao-tPv" id="gjf-Gl-2WM"/>
+                <outlet property="oilCardTextF" destination="VoG-gl-Iz0" id="Cqb-0s-Rrb"/>
+                <outlet property="oilCardTextF2" destination="vKC-cY-dGY" id="kJw-Qn-PyW"/>
+                <outlet property="okBtn" destination="YCe-Ea-LqS" id="mDa-w4-cnN"/>
+                <outlet property="petroChinaViewHeight" destination="NSL-xG-fK9" id="vhE-Dd-hix"/>
+                <outlet property="qtIDTextF" destination="xgr-XY-uHq" id="jeb-Ln-Af2"/>
+                <outlet property="youView" destination="G3j-kC-ytX" id="217-Gw-em4"/>
+            </connections>
+            <point key="canvasLocation" x="-6.5" y="-167"/>
+        </view>
+    </objects>
+</document>
