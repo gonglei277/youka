@@ -1,0 +1,37 @@
+//
+//  universialshare.pch
+//  Universialshare
+//
+//  Created by 四川三君科技有限公司 on 2017/3/23.
+//  Copyright © 2017年 四川三君科技有限公司. All rights reserved.
+//
+
+#ifndef universialshare_pch
+#define universialshare_pch
+
+#import "Header.h"
+#import "UIView+Extension.h"
+#import "NetworkManager.h"
+#import "MBProgressHUD+LB.h"
+#import "UserModel.h"
+#import "usermodelachivar.h"
+#import <MJRefresh/MJRefresh.h>
+
+#import "predicateModel.h"
+#import <MJExtension/MJExtension.h>
+#import "LoadWaitView.h"
+#import "NodataView.h"
+#import "formattime.h"
+
+#import "RSAEncryptor.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
+//#import "GLNearby_Model.h"
+
+#import "UIView+Extension.h"
+
+#define FONT(s)       [UIFont systemFontOfSize:s]
+#define BackgroundColor [UIColor colorWithRed:240/255.0f green:240/255.0f blue:244/255.0f alpha:1]
+#define MainColor        [UIColor colorWithRed:24/255.0f green:161/255.0f blue:76/255.0f alpha:1]
+
+#endif /* universialshare_pch */
